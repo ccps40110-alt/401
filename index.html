@@ -1,64 +1,110 @@
-﻿<!DOCTYPE html>
-<html lang="zh-Hant">
+
+<!DOCTYPE html>
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的個人網站</title>
+    <title>Ashley's Personal Website</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            background-color: #f0f8ff;
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            height: 100vh;
-            color: #333;
-        }
-        .container {
             text-align: center;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
-            max-width: 500px;
         }
-        img {
+
+        header {
+            background-color: #3A8DFF;
             width: 100%;
+            padding: 30px 0;
+            color: white;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        .intro {
+            margin-top: 30px;
+        }
+
+        .intro img {
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
-            max-width: 150px;
-            margin-bottom: 20px;
+            object-fit: cover;
+            border: 5px solid #fff;
         }
-        h1 {
-            font-size: 24px;
-            margin: 10px 0;
+
+        .intro h1 {
+            font-size: 2rem;
+            margin: 20px 0;
+            font-weight: 600;
         }
-        p {
-            font-size: 16px;
-            color: #777;
-        }
-        .bio {
-            text-align: left;
-            font-size: 14px;
+
+        .intro p {
+            font-size: 1.1rem;
             color: #555;
-            margin-top: 20px;
+        }
+
+        .pdf-section {
+            margin-top: 40px;
+        }
+
+        .pdf-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .pdf-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .pdf-links a {
+            font-size: 1.1rem;
+            text-decoration: none;
+            color: #3A8DFF;
+            background-color: #fff;
+            padding: 12px 20px;
+            border-radius: 5px;
+            border: 2px solid #3A8DFF;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .pdf-links a:hover {
+            background-color: #3A8DFF;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <img src="your-photo.jpg" alt="個人照片"> <!-- 這裡替換成你的照片路徑 -->
-        <h1>你好，我是[你的名字]</h1>
-        <p>歡迎來到我的個人網站！這裡會展示我的一些介紹與作品。</p>
-        
-        <div class="bio">
-            <h2>關於我</h2>
-            <p>大家好，我是一名專注於插畫與數位藝術的繪師。我熱愛創作並致力於將我的想像力與創意轉化為畫作。從小就對繪畫充滿熱情，並且一直在不斷學習與挑戰自己，探索各種風格與媒介。</p>
-            <p>我的作品涵蓋人物插畫、風景畫以及概念設計，我喜歡在畫布上創造出奇幻的世界，並希望能將這些作品帶給更多人。</p>
-            <p>如果你對我的作品有興趣，或是想要合作，隨時可以聯繫我！</p>
-        </div>
+
+<header>
+    <h1>Ashley</h1>
+    <p>Vlogging About Beauty, Fashion, Life Hacks & My Life!</p>
+</header>
+
+<div class="intro">
+    <img src="myphoto.jpg" alt="Ashley">
+    <h1>Ashley</h1>
+    <p>Welcome to my personal website! I love sharing beauty tips, fashion ideas, life hacks, and a peek into my daily life!</p>
+</div>
+
+<div class="pdf-section">
+    <h2>My Works</h2>
+    <div class="pdf-links">
+        <a href="work1.pdf" target="_blank">PDF Work 1</a>
+        <a href="work2.pdf" target="_blank">PDF Work 2</a>
+        <a href="work3.pdf" target="_blank">PDF Work 3</a>
     </div>
+</div>
+
 </body>
 </html>
